@@ -1,0 +1,69 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Hurricane Barry 2019 Response
+email: info@codeforamerica.org
+description: >- #m this means to ignore newlines until "baseurl:"
+  Code for America Shaken Fury 2019 Drill Hub
+baseurl: "/barry" # the subpath of your site, e.g. /blog
+# url: "drill.hurricane-response.org" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+permalink: pretty
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+repository: hurricane-response/barry
+
+remote_theme:  hurricane-response/response-theme
+
+logo: assets/images/og_img.jpg
+
+# Site settings
+# txtbot number - what triggers the bot, word, zipcode, etc
+txtbot_trigger: Florence
+# txtbot display - i.e. 1-800-555-1212 vs 18005551212
+textbot_display: 898211
+
+# mapbox access token
+mapbox_access_token: pk.eyJ1IjoibWlrbGItYzR0YiIsImEiOiJjam5kOGg3c2kwMDB3M3dwYXQyMDJpdzFtIn0.yKOyo193qF1quWsNwiFzug
+
+shelter_map_center: -92.0198, 30.2241
+
+pod_map_center: -92.0198, 30.2241
+
+shelter_endpoint: https://api.hurricane-response.org/api/v1/shelters/geo.json
+
+pod_endpoint: https://api.hurricane-response.org/api/v1/distribution_points/geo.json
+
+# Build settings
+markdown: kramdown
+# theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
