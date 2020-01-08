@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hurricane Barry
+title: Puerto Rico Earthquake
 email: info@codeforamerica.org
 description: >- #m this means to ignore newlines until "baseurl:"
-  Code for America 2019 Response
+  Code for America 2020 Response
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "drill.hurricane-response.org" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -25,7 +25,7 @@ permalink: pretty
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-repository: hurricane-response/barry
+repository: hurricane-response/pr-quake
 
 remote_theme:  hurricane-response/response-theme
 
@@ -37,9 +37,11 @@ gtag: UA-125718262-2
 # mapbox access token
 mapbox_access_token: pk.eyJ1IjoibWlrbGItYzR0YiIsImEiOiJjam5kOGg3c2kwMDB3M3dwYXQyMDJpdzFtIn0.yKOyo193qF1quWsNwiFzug
 
-shelter_map_center: -92.0198, 30.2241
-
-pod_map_center: -92.0198, 30.2241
+# epicenter -66.8195, 17.9940
+shelter_map_center: -66.5979, 18.1631
+shelter_zoom: 8.6
+pod_map_center: -66.5979, 18.1631
+pod_zoom: 8.6
 
 shelter_endpoint: https://api.hurricane-response.org/api/v1/shelters/geo.json
 
